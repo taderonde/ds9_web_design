@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>DS9</title>
+  <title>DS9: Plots</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="bootstrap.css">
 </head>
@@ -25,8 +25,8 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="best_episodes.html">The Best Episodes</a>
                         <a class="dropdown-item" href="worst_episodes.html">The Worst Episodes</a>
-                        <a class="dropdown-item" href="best_characters.html">Main Characters Ranked</a>
-                        <a class="dropdown-item" href="best_characters_not_top_24.html">Non-Main Characters Ranked</a>
+                        <a class="dropdown-item" href="best_characters.html">Major Characters Ranked</a>
+                        <a class="dropdown-item" href="best_characters_not_top_24.html">Minor Characters Ranked</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -53,14 +53,27 @@
     <!-- Row 2 -->
     <div class="row">
         <div class="col-md-12">
-          <h3><small class="text-muted">Character per Episode Contribution to Rating</small></h3><hr>
+          <h3><small class="text-muted">Character per Episode Rating Contribution</small></h3><hr>
         </div>
       </div>
 
     <!-- Row 3 -->
     <div class="row">
       <div class="col-md-6">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur optio dolorem dolores odio alias perferendis, commodi cum. Natus libero cum dolore officia quia eveniet modi reprehenderit soluta ratione quisquam? Sequi.</p>
+        <p>
+          Characters were given rating scores proportionate to their number of lines in an episode and the episode's rating.
+          Each characters' total score was then divided by the number of episodes each character appeared in.
+          <br><br>
+          The chart compares the top 24 characters with the most lines in the entire show.
+          <br><br>
+          Once again, Sisko, as the show's main character, tops the list.
+          However, Garak, Dukat, Winn, and Eddington appear above the show's other core cast because of their greater relative involvement in highly rated episodes.
+          Vic is probably misrepresented here because of his singing lines (e.g., his songs are played in "the Siege of AR-558" though he doesn't actually appear).
+          <br><br>
+          Quark, Rom, and Zek are on the other end of the spectrum. Zek is a truly terrible character, and Rom is not far behind.
+          Quark, though one of the show's best <em>characters</em>, is in some bad episodes, 
+          while typically playing only a bit part in the show's best.
+        </p>
       </div>
       <div class="col-md-6">
         <article>
@@ -75,23 +88,29 @@
       <div class="row">
         <hr>
         <div class="col-md-3"></div>
-        <div class="col-md-2">
-          <article>
-          <a target="_self" href="best_episodes.html">
-            <img class="img-fluid" src="https://raw.githubusercontent.com/tderonde/ds9_analysis/main/plots/DS9_lines_in_best_episodes.png" alt="best_episodes">
-          </a>
-        </div>
-        <div class="col-md-2">
-          <article>
-            <a target="_self" href="worst_episodes.html">
-              <img class="img-fluid" src="https://raw.githubusercontent.com/tderonde/ds9_analysis/main/plots/DS9_lines_in_worst_episodes.png" alt="worst_episodes">
-            </a>
-        </div>
-        <div class="col-md-2">
-          <article>
-            <a target="_self" href="best_characters_not_top_24.html">
-              <img class="img-fluid" src="https://raw.githubusercontent.com/tderonde/ds9_analysis/main/plots/DS9_character_rating_per_episode_non-major_characters.png" alt="best_characters_not_in_top_24">
-            </a>
+        <div class="col-md-6">
+          <div class="container">
+            <div class="row">
+                <div class="col-4 col-md-4">
+                  <article>
+                    <a target="_self" href="best_episodes.html">
+                      <img class="img-fluid" src="https://raw.githubusercontent.com/tderonde/ds9_analysis/main/plots/DS9_lines_in_best_episodes.png" alt="best_episodes">
+                    </a>
+                </div>
+                <div class="col-4 col-md-4">
+                  <article>
+                    <a target="_self" href="worst_episodes.html">
+                      <img class="img-fluid" src="https://raw.githubusercontent.com/tderonde/ds9_analysis/main/plots/DS9_lines_in_worst_episodes.png" alt="worst_episodes">
+                    </a>
+                </div>
+                <div class="col-4 col-md-4">
+                  <article>
+                    <a target="_self" href="best_characters_not_top_24.html">
+                      <img class="img-fluid" src="https://raw.githubusercontent.com/tderonde/ds9_analysis/main/plots/DS9_character_rating_per_episode_non-major_characters.png" alt="best_characters_not_in_top_24">
+                    </a>
+                </div>
+            </div>
+          </div>
         </div>
         <div class="col-md-3"></div>
       </div>

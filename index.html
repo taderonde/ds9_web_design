@@ -25,8 +25,8 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="best_episodes.html">The Best Episodes</a>
                         <a class="dropdown-item" href="worst_episodes.html">The Worst Episodes</a>
-                        <a class="dropdown-item" href="best_characters.html">Main Characters Ranked</a>
-                        <a class="dropdown-item" href="best_characters_not_top_24.html">Non-Main Characters Ranked</a>
+                        <a class="dropdown-item" href="best_characters.html">Major Characters Ranked</a>
+                        <a class="dropdown-item" href="best_characters_not_top_24.html">Minor Characters Ranked</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -53,68 +53,61 @@
     <!-- Row 2 -->
     <div class="row">
         <div class="col-md-12">
-          <h3><small class="text-muted">Which Characters Make the Best Episodes?</small></h3><hr>
+          <h3><small class="text-muted">Analyzing Character Impact on Episode Ratings</small></h3><hr><br>
         </div>
       </div>
-
-    <!-- Row 3 -->
-    <div class="row">
-      <div class="col-md-6">
-        <p></p>
-      </div>
-      <div class="col-md-2">
-        <p></p>
-      </div>
-      <div class="col-md-4">
-        <p><h3><small class="text-muted">Visualizations</small></h3></p>
-      </div>
-    </div>
 
     <!-- Row 4 -->
     <div class="row">
       <div class="col-md-6">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur optio dolorem dolores odio alias perferendis, commodi cum. Natus libero cum dolore officia quia eveniet modi reprehenderit soluta ratione quisquam? Sequi.</p>
+        <p>This analysis identifies which characters in <em>Star Trek: Deep Space Nine</em> have the best storylines.
+        It attempts to quantify characters' contribution to an episode's positive or negative rating based on characters' number of lines in a given episode.
+        Scores were then aggregated and normalized by the number of episodes each character appears in.
+        <br><br><em>Star Trek</em> script data was sourced from <a href="https://www.kaggle.com/gjbroughton/start-trek-scripts">Kaggle</a>  (which itself was scraped from <a href="http://www.chakoteya.net/StarTrek/index.html">chakoteya.net</a>)
+        <br><br><em>Star Trek</em> episode ratings were sourced from <a href="https://www.jammersreviews.com/">Jammer's Reviews</a>, the internet's best source for <em>Star Trek</em> reviews.
+        </p>
       </div>
-      <div class="col-md-2">
+      <div class="col-md-1">
         <p></p>
       </div>
-      <div class="col-md-2">
-        <article>
-          <a target="_self" href="best_episodes.html">
-            <img class="img-fluid" src="https://raw.githubusercontent.com/tderonde/ds9_analysis/main/plots/DS9_lines_in_best_episodes.png" alt="best_episodes">
-          </a>
-      </div>
-      <div class="col-md-2">
-        <article>
-          <a target="_self" href="worst_episodes.html">
-            <img class="img-fluid" src="https://raw.githubusercontent.com/tderonde/ds9_analysis/main/plots/DS9_lines_in_worst_episodes.png" alt="worst_episodes">
-          </a>
+      <div class="col-md-5">
+      <div class='container'>
+        <div class="row">
+          <div class="col-md-12">
+            <p><h3><small class="text-muted">Visualizations</small></h3></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <article>
+              <a target="_self" href="best_episodes.html">
+                <img class="img-fluid" src="https://raw.githubusercontent.com/tderonde/ds9_analysis/main/plots/DS9_lines_in_best_episodes.png" alt="best_episodes">
+              </a>
+          </div>
+          <div class="col-md-6">
+            <article>
+              <a target="_self" href="worst_episodes.html">
+                <img class="img-fluid" src="https://raw.githubusercontent.com/tderonde/ds9_analysis/main/plots/DS9_lines_in_worst_episodes.png" alt="worst_episodes">
+              </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <article>
+              <a target="_self" href="best_characters.html">
+                <img class="img-fluid" src="https://raw.githubusercontent.com/tderonde/ds9_analysis/main/plots/DS9_character_per_episode_ratings.png" alt="best_characters">
+              </a>
+          </div>
+          <div class="col-md-6">
+            <article>
+              <a target="_self" href="best_characters_not_top_24.html">
+                <img class="img-fluid" src="https://raw.githubusercontent.com/tderonde/ds9_analysis/main/plots/DS9_character_rating_per_episode_non-major_characters.png" alt="best_characters_not_in_top_24">
+              </a>
+          </div>
+        </div>
       </div>
     </div>
-
-    <!-- Row 5 -->
-    <div class="row">
-      <div class="col-md-6">
-        <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur optio dolorem dolores odio alias perferendis, commodi cum. Natus libero cum dolore officia quia eveniet modi reprehenderit soluta ratione quisquam? Sequi."</p>
-      </div>
-      <div class="col-md-2">
-        <p></p>
-      </div>
-      <div class="col-md-2">
-        <article>
-          <a target="_self" href="best_characters.html">
-            <img class="img-fluid" src="https://raw.githubusercontent.com/tderonde/ds9_analysis/main/plots/DS9_character_per_episode_ratings.png" alt="best_characters">
-          </a>
-      </div>
-      <div class="col-md-2">
-        <article>
-          <a target="_self" href="best_characters_not_top_24.html">
-            <img class="img-fluid" src="https://raw.githubusercontent.com/tderonde/ds9_analysis/main/plots/DS9_character_rating_per_episode_non-major_characters.png" alt="best_characters_not_in_top_24">
-          </a>
-      </div>
     </div>
-
-
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
